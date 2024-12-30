@@ -12,8 +12,8 @@ class ShrunkTerminalWidget(QWidget):
         super().__init__(parent)
 
         # ------------ CONFIGURABLE COLORS / FONTS ------------
-        self.bg_color = "#1e1e1e"
-        self.fg_color = "#33ff33"
+        self.bg_color = "#24273A"
+        self.fg_color = "#C6A0D7"
         self.address_color = "#ff0000"
         self.font_family = "Courier New"
         self.font_size = 16
@@ -106,7 +106,7 @@ class ShrunkTerminalWidget(QWidget):
             r" |,4-  ) )-,_. ,\ (  `'-'",
             r"'---''(_/--'  `-'\'_)"
         ]
-        # The Z chars we'll animate
+        
         self.z_chars = list("ZZZz")  # each character is animated up/down
         self.z_offsets = [0] * len(self.z_chars)
         self.z_directions = [1, -1, 1, -1]  # for a simple alternating pattern
