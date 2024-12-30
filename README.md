@@ -1,6 +1,6 @@
 # SHRUNK
  
-### A programming art project inspired by "Shrunk" - a song by Aesop Rock.
+### A programming art project.
 
 ### Built using PyQt5.
 
