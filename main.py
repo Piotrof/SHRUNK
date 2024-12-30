@@ -292,7 +292,7 @@ class ShrunkTerminalWidget(QWidget):
         y_pos += line_height * 2  # This adds one more blank line
 
         # 1) Draw the static cat lines
-        cat_line_height = fm.height()  # normal spacing for cat
+        cat_line_height = fm.height()
         for cat_line in self.cat_ascii:
             painter.drawText(x_margin, y_pos, cat_line)
             y_pos += cat_line_height
