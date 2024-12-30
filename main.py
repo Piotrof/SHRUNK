@@ -298,13 +298,11 @@ class ShrunkTerminalWidget(QWidget):
             y_pos += cat_line_height
 
         # 2) Draw each Z individually, near the cat’s top-left
-        # Let’s define a base x a bit to the right of the cat so it’s visible
         cat_top = y_pos - len(self.cat_ascii) * cat_line_height
-        z_base_x = x_margin + 100  # shift to the right so the Z is on-screen
+        z_base_x = x_margin + 100
         z_base_y = cat_top + fm.height()
 
         for i, z_ch in enumerate(self.z_chars):
-            # stack them downward with 1 line height spacing
             z_y = z_base_y + i * cat_line_height + self.z_offsets[i]
             painter.drawText(z_base_x, z_y, z_ch)
 
