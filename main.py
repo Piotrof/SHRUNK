@@ -11,7 +11,7 @@ class ScreensaverWindow(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         # Hardcoded path to your custom video
-        self.video_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "animated_image.gif")
+        self.video_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "D:\Programming\GitHub\SHRUNK\screensaver.mp4")
         self.initUI()
 
     def initUI(self):
